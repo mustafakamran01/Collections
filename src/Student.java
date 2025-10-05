@@ -1,6 +1,7 @@
+import java.util.Comparator;
 import java.util.Objects;
 
-public class Student {
+public class Student implements Comparable<Student> {
     String name;
     int id;
 
@@ -11,7 +12,7 @@ public class Student {
 
     @Override
     public String toString(){
-        return "Student[" + "Name: " + name + ',' + " RollNo: " + id + ']';
+        return "Student{" + "Name: " + name + ',' + " RollNo: " + id + '}';
     }
 
     @Override
@@ -24,5 +25,10 @@ public class Student {
     @Override
     public int hashCode() {
         return Objects.hashCode(id);
+    }
+
+    @Override
+    public int compareTo(Student that){
+        return this.id - that.id;
     }
 }
