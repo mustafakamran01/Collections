@@ -11,7 +11,7 @@ public class Student {
 
     @Override
     public String toString(){
-        return "Student{" + "Name: " + name + ',' + " RollNo: " + id + '}';
+        return "Student[" + "Name: " + name + ',' + " RollNo: " + id + ']';
     }
 
     @Override

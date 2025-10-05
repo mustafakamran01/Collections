@@ -23,26 +23,25 @@ public class LearnMap {
             then it will insert the element
          */
 
-        System.out.println(numbers);
+//        System.out.println(numbers);
 
-        System.out.println(numbers.containsKey("Three")); // it will check whether the given keys is present or not
-        System.out.println(numbers.containsValue(4)); // it will check whether the given values is present or not
-        System.out.println(numbers.isEmpty());
+//        System.out.println(numbers.containsKey("Three")); // it will check whether the given keys is present or not
+//        System.out.println(numbers.containsValue(4)); // it will check whether the given values is present or not
+//        System.out.println(numbers.isEmpty());
 
-        for(Map.Entry<String, Integer> e: numbers.entrySet()) {
-            System.out.println(e);
-
-            System.out.println(e.getKey());
-            System.out.println(e.getValue());
-        }
+//        for(Map.Entry<String, Integer> ele : numbers.entrySet()){
+//            System.out.println(ele);
+//            System.out.println(ele.getKey());
+//            System.out.println(ele.getValue());
+//        }
 
         for (String key: numbers.keySet()) {
             System.out.println(key);
         }
-
-        for(Integer value: numbers.values()) {
-            System.out.println(value);
-        }
+//
+//        for(Integer value: numbers.values()) {
+//            System.out.println(value);
+//        }
 
     }
 }
