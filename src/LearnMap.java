@@ -1,12 +1,20 @@
 import java.util.HashMap;
 import java.util.Map;
+import java.util.TreeMap;
 
 public class LearnMap {
     public static void main(String[] args) {
 
-        Map<String, Integer> numbers = new HashMap<>();
+//        Map<String, Integer> numbers = new HashMap<>();
         /*
             It does not maintain the insertion order
+            Time complexity: Big o(1)
+         */
+
+        Map<String, Integer> numbers = new TreeMap<>();
+        /*
+            It sorts the elements on the basis of keys
+            Time complexity: Big olog(n)
          */
 
         numbers.put("One", 1);
@@ -23,7 +31,12 @@ public class LearnMap {
             then it will insert the element
          */
 
-//        System.out.println(numbers);
+        numbers.remove("Three");
+        /*
+            It will remove the given key from the map.
+         */
+
+        System.out.println(numbers);
 
 //        System.out.println(numbers.containsKey("Three")); // it will check whether the given keys is present or not
 //        System.out.println(numbers.containsValue(4)); // it will check whether the given values is present or not
@@ -42,6 +55,5 @@ public class LearnMap {
 //        for(Integer value: numbers.values()) {
 //            System.out.println(value);
 //        }
-
     }
 }
