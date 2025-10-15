@@ -1,1 +1,2 @@
-A repo for collections of java
+Collections
+A repo for collection framework in java
